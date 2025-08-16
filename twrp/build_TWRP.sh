@@ -1,6 +1,4 @@
 #!/bin/bash
-set -euo pipefail
-
 setup_build_environment() {
   local twrp_source_dir="$1"
   local lunch_name="$2"
