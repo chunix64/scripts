@@ -3,6 +3,8 @@ setup_build_environment() {
   local twrp_source_dir="$1"
   local lunch_name="$2"
 
+  cd "$twrp_source_dir"
+
   # Extract device name from lunch_name (e.g., twrp_CK6n-eng → CK6n)
   local device_name="${lunch_name#*_}"   # remove prefix up to first "_"
   device_name="${device_name%%-*}"       # remove suffix from first "-"
