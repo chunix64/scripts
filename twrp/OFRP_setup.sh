@@ -18,7 +18,8 @@ sync_orangefox() {
   local ofrp_dir=$2
 
   if [[ -z "$ofrp_dir" ]]; then
-    ofrp_dir="~/OrangeFox"
+    echo "⚠️ No ORANGE_FOX_FOLDER found."
+    exit 1
   fi
   
   mkdir ~/OrangeFox_sync
