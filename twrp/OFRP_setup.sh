@@ -17,7 +17,7 @@ sync_orangefox() {
   local ofrp_branch=$1
   local ofrp_dir=$2
 
-  if [[ -z "$ofrp_folder" ]]; then
+  if [[ -z "$ofrp_dir" ]]; then
     ofrp_dir="~/OrangeFox"
   fi
   
